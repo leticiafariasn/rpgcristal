@@ -1,0 +1,350 @@
+/* Estilos Base */
+:root {
+    --primary-color: #8B0000; /* Vermelho escuro */
+    --secondary-color: #DAA520; /* Dourado */
+    --text-color: #2C1B0E; /* Marrom escuro */
+    --background-color: #F5E8D3; /* Bege claro (pergaminho) */
+    --accent-color: #4A2511; /* Marrom avermelhado */
+    --highlight-color: #FFD700; /* Dourado brilhante */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: #2C1B0E; /* Fundo escuro ao redor do pergaminho */
+    line-height: 1.6;
+}
+
+.parchment-background {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: var(--background-color);
+    background-image: url('');
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* Adiciona bordas decorativas ao redor do pergaminho */
+.parchment-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 12px solid transparent;
+    border-image: url('img/') 30 round;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Cabeçalho */
+header {
+    background-image: url('img/valkaria-1.webp'); /* Substitua por uma imagem de banner medieval */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.site-title {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.site-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Navegação */
+.main-nav {
+    background-color: var(--accent-color);
+    border-top: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: var(--primary-color);
+}
+
+.secret-link {
+    opacity: 0.5;
+}
+
+/* Seções */
+.section {
+    padding: 40px;
+    margin: 20px 0;
+}
+
+.section-title {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 10px auto;
+}
+
+/* Elementos decorativos */
+.decorative-initial {
+    float: left;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    padding-right: 10px;
+    color: var(--primary-color);
+}
+
+.scroll {
+    background-color: #F8F0E0;
+    border: 1px solid #D0B084;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+
+.divider-icon {
+    margin: 0 15px;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.card {
+    background-color: #F8F0E0;
+    border: 1px solid #D0B084;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--accent-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #F8F0E0;
+    border: 1px solid #D0B084;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+    font-family: 'MedievalSharp', cursive;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #6B0000;
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+}
+
+.btn-secondary:hover {
+    background-color: #3A1501;
+}
+
+/* Citações */
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+blockquote cite {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    font-style: normal;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border-top: 3px solid var(--secondary-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

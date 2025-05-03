@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tormenta 20 - A Saga de Arton</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="parchment-background">
+        <header>
+            <div class="header-content">
+                <h1 class="site-title">Quando os Deuses Silenciam</h1>
+                <p class="site-subtitle">Tormenta 20</p>
+            </div>
+        </header>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sessoes.html">Sessões</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="jogadores.html">Jogadores</a></li>
+                <li><a href="mundo.html">O Mundo</a></li>
+                <li><a href="extras.html">Extras</a></li>
+                <li><a href="area-mestre.html" class="secret-link">Área do Mestre</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <!-- Conteúdo das seções será inserido aqui -->
+            
+            <!-- Seção Inicial -->
+            <section id="sessoes" class="section">
+                <h2 class="section-title">Crônicas da Jornada</h2>
+                
+                <p class="section-intro">Aqui estão registrados os feitos e desventuras de nossos heróis ao longo de sua épica jornada pelas terras de Arton. Cada entrada representa uma página na história que continua a ser escrita com sangue, magia e coragem.</p>
+                
+                <div class="timeline-controls">
+                    <button id="prev-session" class="btn btn-secondary">◀ Anterior</button>
+                    <span id="current-year">Ano 1</span>
+                    <button id="next-session" class="btn btn-secondary">Próximo ▶</button>
+                </div>
+                
+                <div class="timeline">
+                    <!-- Ano 1 -->
+                    <div class="timeline-year" data-year="1">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">O Encontro em Valkaria</h3>
+                                <p class="timeline-date">15 de Lemnor, 1420 D.C.</p>
+                                <p>Sob o céu estrelado de Valkaria, seis estranhos se encontraram na Taverna do Dragão Caolho. O destino, esse tecelão invisível, uniu Alpha, a guerreira de olhar penetrante; Gaya, a druida de cabelos cor de folhagem outonal; Callon Aesir, o paladino de armadura reluzente; Alana, a ladina de mãos ágeis; Sigma, o mago de vestes misteriosas; e Black, o bárbaro de cicatrizes antigas. Mal sabiam eles que aquela noite marcaria o início de uma saga que ecoaria por toda Arton.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">A Profecia do Oráculo</h3>
+                                <p class="timeline-date">22 de Lemnor, 1420 D.C.</p>
+                                <p>Nas profundezas do Templo de Thyatis, nossos heróis encontraram o Oráculo de Olhos Vendados. Com voz etérea que parecia vir de outro plano, a anciã revelou fragmentos de uma profecia antiga: "Quando a Tormenta sangrar sobre as Montanhas Uivantes, seis pilares sustentarão o céu ou o mundo sucumbirá." As palavras pairaram no ar como névoa, enquanto os aventureiros trocavam olhares carregados de dúvida e determinação.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Sangue nas Ruínas</h3>
+                                <p class="timeline-date">5 de Galatia, 1420 D.C.</p>
+                                <p>As ruínas de Tyr-Sog, outrora majestosas, agora não passavam de um labirinto de pedra e sombras. Foi ali que nossos heróis enfrentaram seu primeiro grande desafio: uma seita de cultistas devotos à Tormenta. Em meio ao combate feroz, Alpha revelou um poder incomum, suas lâminas brilhando com uma luz prateada que fazia os lefeu recuarem em terror. Vitoriosos mas feridos, o grupo encontrou entre os escombros um antigo pergaminho com símbolos que apenas Sigma conseguia parcialmente decifrar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ano 2 -->
+                    <div class="timeline-year" data-year="2" style="display: none;">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">A Travessia do Pântano Pútrido</h3>
+                                <p class="timeline-date">18 de Ramnon, 1421 D.C.</p>
+                                <p>Por sete dias e sete noites, nossos heróis atravessaram o infame Pântano Pútrido. A névoa venenosa queimava os pulmões, enquanto criaturas de pesadelo espreitavam nas águas turvas. Foi Gaya quem os guiou, sua conexão com a natureza encontrando caminhos onde não havia trilhas. Durante a jornada, Callon Aesir caiu enfermo por uma mordida de serpente espectral, e apenas a intervenção divina de Thyatis, canalizada através de suas próprias preces febris, o salvou da morte certa.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">O Pacto de Wulfbrak</h3>
+                                <p class="timeline-date">3 de Behter, 1421 D.C.</p>
+                                <p>Nas terras geladas de Wulfbrak, onde o vento corta como lâminas de gelo, nossos heróis negociaram uma aliança improvável com o Clã Lobo de Prata. O orgulhoso chefe Thorgar Punho de Gelo exigiu prova de valor: a cabeça do dragão branco que aterrorizava seus caçadores. Foi Black quem desferiu o golpe final na fera, seu machado de batalha mergulhando profundamente no crânio da criatura enquanto seus companheiros o protegiam das rajadas gélidas. O banquete que se seguiu selou um pacto de sangue que seria crucial nos dias sombrios que estavam por vir.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Segredos de Arkadia</h3>
+                                <p class="timeline-date">27 de Galatia, 1421 D.C.</p>
+                                <p>A biblioteca proibida de Arkadia guardava conhecimentos que mortais não deveriam possuir. Enquanto Sigma e Gaya decifravam tomos antigos, Alpha e Alana defendiam a entrada contra os Guardiões do Véu, uma ordem secreta determinada a manter certos conhecimentos ocultos. Foi ali que descobriram a verdadeira natureza da Tormenta: não apenas uma tempestade mágica, mas uma entidade consciente, faminta, que se alimentava da própria realidade. E pior: havia aqueles que desejavam despertá-la por completo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ano 3 -->
+                    <div class="timeline-year" data-year="3" style="display: none;">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">A Traição de Delavon</h3>
+                                <p class="timeline-date">12 de Lemnor, 1422 D.C.</p>
+                                <p>A cidade-estado de Delavon abriu suas portas douradas para nossos heróis, oferecendo um banquete em sua honra. O Conselho dos Doze os recebeu como salvadores, mas Alana percebeu os olhares furtivos, as taças que nunca eram bebidas pelos anfitriões. Quando a emboscada veio, estavam preparados. O combate nos salões de mármore revelou a terrível verdade: três dos conselheiros haviam sido corrompidos pela Tormenta, seus corpos deformados escondidos sob vestes elaboradas. A fuga da cidade foi caótica, com Callon Aesir ficando para trás para garantir que civis inocentes escapassem da carnificina.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">O Retorno do Paladino</h3>
+                                <p class="timeline-date">1 de Behter, 1422 D.C.</p>
+                                <p>Por semanas, o grupo acreditou que Callon Aesir havia perecido em Delavon. A reunião nas Colinas Sussurrantes foi marcada por lágrimas e espanto. O paladino retornou mudado, sua armadura antes imaculada agora marcada por símbolos estranhos, seu olhar carregando o peso de horrores testemunhados. Ele falou pouco sobre sua fuga, mas trouxe consigo um conhecimento crucial: a localização do Templo Submerso, onde repousava um dos artefatos necessários para conter a expansão da Tormenta.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Nas Profundezas do Templo Submerso</h3>
+                                <p class="timeline-date">19 de Galatia, 1422 D.C.</p>
+                                <p>As águas do Lago Espelho escondiam mais do que reflexos. Nossos heróis mergulharam nas profundezas geladas, guiados por encantamentos de Sigma que permitiam respirar sob as águas. O templo antigo era um labirinto de corredores inundados e câmaras onde a água não entrava, desafiando as leis naturais. Foi nos salões mais profundos que encontraram o Orbe de Contenção, guardado por um kraken corrompido pela Tormenta. A batalha subaquática foi brutal, com Gaya assumindo a forma de um tubarão gigante para enfrentar os tentáculos da criatura, enquanto os demais buscavam o artefato.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ano 4 -->
+                    <div class="timeline-year" data-year="4" style="display: none;">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">A Aliança das Três Nações</h3>
+                                <p class="timeline-date">7 de Ramnon, 1423 D.C.</p>
+                                <p>Sob a bandeira neutra do Bosque Prateado, representantes de Arkadia, Wulfbrak e os sobreviventes de Delavon se reuniram em um conselho sem precedentes. Nossos heróis apresentaram evidências da ameaça crescente, o Orbe de Contenção pulsando em resposta à proximidade da Tormenta. Discursos inflamados foram proferidos, antigas rivalidades emergiram, mas ao final do terceiro dia, o impensável aconteceu: um pacto foi selado entre as três nações. Exércitos seriam mobilizados, recursos compartilhados, e nossos aventureiros receberiam o apoio necessário para sua missão final.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">O Ritual das Seis Chamas</h3>
+                                <p class="timeline-date">21 de Behter, 1423 D.C.</p>
+                                <p>No círculo de pedras conhecido como Coroa dos Antigos, nossos heróis se prepararam para o Ritual das Seis Chamas. Cada um representava um elemento fundamental: Alpha, o aço; Gaya, a terra; Callon, a luz; Alana, a sombra; Sigma, o conhecimento; e Black, o sangue. Enquanto o céu se tingia de vermelho e a Tormenta rugia no horizonte, eles canalizaram suas essências para o Orbe de Contenção. O ritual exigia sacrifício – não de vidas, mas de algo precioso para cada um. Alpha entregou sua espada ancestral; Gaya, uma semente do Carvalho Eterno; Callon, uma gota do sangue divino de Thyatis; Alana, a adaga com que realizou seu primeiro roubo; Sigma, um tomo contendo segredos arcanos proibidos; e Black, a cicatriz que carregava desde a infância, símbolo de sua tribo perdida.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">A Batalha do Vale Carmesim</h3>
+                                <p class="timeline-date">3 de Galatia, 1423 D.C.</p>
+                                <p>A Tormenta avançou como nunca antes, transformando o céu em um turbilhão escarlate. No Vale Carmesim, os exércitos aliados enfrentaram hordas de criaturas corrompidas – lefeu, quimeras, e abominações sem nome. Enquanto a batalha rugia ao redor, nossos seis heróis avançaram para o epicentro da tempestade, o Orbe de Contenção brilhando intensamente em suas mãos. O confronto final foi contra o Avatar da Tormenta, uma entidade colossal formada de carne retorcida e energia caótica. Quando tudo parecia perdido, com metade do grupo gravemente ferido, Alpha e Callon combinaram seus poderes em um ataque desesperado. O Orbe foi lançado no núcleo da criatura, criando uma implosão que sugou grande parte da tempestade para dentro do artefato. A Tormenta recuou, mas não foi derrotada – apenas contida temporariamente. Nossos heróis sabiam que esta era apenas a primeira de muitas batalhas por vir, mas por ora, Arton estava a salvo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Outras seções seguirão o mesmo padrão -->
+        </main>
+        
+        <footer>
+            <p>© 2025 Tormenta 20 - A Saga de Arton | Criado com magia e dados de 20 faces</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
